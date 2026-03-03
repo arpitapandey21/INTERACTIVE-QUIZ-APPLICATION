@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpita Web Mastery - Professional Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Tech Background -->
+    <div class="bg-animation">
+        <div class="code-line line1"></div>
+        <div class="code-line line2"></div>
+        <div class="code-line line3"></div>
+        <div class="code-line line4"></div>
+        <div class="code-line line5"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <i class="fas fa-brain"></i>
+            <span>Arpita Web Mastery</span>
+        </div>
+        <div class="user-stats" id="userStats">
+            <span id="currentScore">Score: 0</span>
+            <span id="questionCounter">Q1/15</span>
+        </div>
+    </nav>
+
+    <!-- Main Quiz Container -->
+    <div class="quiz-container">
+        <!-- Progress Header -->
+        <div class="progress-header">
+            <div class="progress-circle">
+                <svg viewBox="0 0 60 60">
+                    <circle cx="30" cy="30" r="26" class="progress-bg"></circle>
+                    <circle cx="30" cy="30" r="26" class="progress-fill" id="progressFill"></circle>
+                </svg>
+                <div class="progress-text" id="progressText">7%</div>
+            </div>
+            <div class="timer-container">
+                <i class="fas fa-clock"></i>
+                <span id="questionTimer">30s</span>
+            </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card glass-effect">
+            <div class="question-number">
+                <i class="fas fa-hashtag"></i>
+                <span id="qNumber">1</span>
+            </div>
+            <h2 class="question-text" id="questionText">Loading question...</h2>
+            
+            <div class="options-grid" id="optionsGrid">
+                <!-- Options will be loaded here -->
+            </div>
+            
+            <button class="next-btn" id="nextBtn" disabled>
+                <i class="fas fa-arrow-right"></i>
+                Next Question
+            </button>
+        </div>
+
+        <!-- Results Modal -->
+        <div class="results-modal" id="resultsModal">
+            <div class="results-card glass-effect">
+                <div class="trophy-section">
+                    <i class="fas fa-crown trophy-icon"></i>
+                </div>
+                <h2 id="resultTitle">Amazing Performance!</h2>
+                <div class="final-score">
+                    <span id="finalScoreNum">0</span>/15
+                </div>
+                <div class="accuracy" id="accuracyPercent">0%</div>
+                <div class="grade-badge" id="gradeBadge"></div>
+                <div class="attempt-stats">
+                    <div>Total Time: <span id="totalTimeTaken">00:00</span></div>
+                    <div>Questions Attempted: <span id="questionsAttempted">15</span></div>
+                </div>
+                <button class="restart-btn" id="restartBtn">
+                    <i class="fas fa-redo"></i> Restart Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
