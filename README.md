@@ -104,3 +104,5 @@ Add More Questions Dynamically
 Leaderboard Feature 
 
 ## OUTPUT
+
+<img width="1874" height="901" alt="Image" src="https://github.com/user-attachments/assets/ac1c0c16-bfb2-4ebe-b385-f39e1b594e5f" />
